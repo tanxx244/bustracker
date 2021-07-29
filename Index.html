@@ -1,25 +1,84 @@
-
-<html>
-
-<head>
-    <meta charset="utf-8" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
     <title>Map Animation</title>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-fixed/">
+
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css">
-</head>
 
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="navbar-top-fixed.css" rel="stylesheet">
+  </head>
+  
 <body>
     
-    <div class="map-overlay top">
-        <button style="font-size: 2em" onclick="move()">
-            Show stops between MIT and Harvard
-        </button>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://tanxx244.github.io/mainpage/">Richard's Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="https://tanxx244.github.io/landingpage/">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://tanxx244.github.io/pacmen/">PacMen Exercise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://tanxx244.github.io/eyes/">Eye Exercise</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://tanxx244.github.io/bustracker/">Real Time Bus Tracker</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact me</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-    <div id="map"></div>
-    <script src="./mapanimation.js"></script>
+  </div>
+</nav>
+
+<div class="map-overlay top">
+    <button style="font-size: 2em" onclick="move()">
+        Show stops between MIT and Harvard
+    </button>
+</div>
+<div id="map"></div>
+<script src="./mapanimation.js"></script>
+
 </body>
 
 </html>
-
