@@ -1,4 +1,7 @@
 #map {
     width: 800px;
     height: 550px;
+    position: absolute;
+    left: 10px;
+    bottom: 0%;
 }
