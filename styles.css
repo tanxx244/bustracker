@@ -5,3 +5,9 @@
     left: 10px;
     bottom: 0%;
 }
+
+.map-overlay {
+	position: absolute;
+	left: 10px;
+	top: 100px;
+}
